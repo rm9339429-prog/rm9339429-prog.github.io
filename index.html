@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliografía de la PlayStation 2</title>
+    <!-- Enlace al archivo CSS en la carpeta css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Canvas para la animación 3D de fondo negro con botones flotantes -->
+    <canvas id="ps2-bg"></canvas>
+    
+    <!-- 1. Audio que inicia al abrir o recargar la página -->
+    <audio id="intro-audio" preload="auto">
+        <source src="audio/videoplayback.m4a" type="audio/mp4">
+    </audio>
+
+    <!-- 2. Audio al pasar el mouse por los cuadrados del menú (13.wav) -->
+    <audio id="menu-hover-audio" preload="auto">
+        <source src="audio/13.wav" type="audio/wav">
+    </audio>
+
+    <!-- 3. Audio al hacer clic en los cuadrados del menú (14.wav) -->
+    <audio id="menu-click-audio" preload="auto">
+        <source src="audio/14.wav" type="audio/wav">
+    </audio>
+
+    <!-- 4. Audio al hacer clic en el logo de PlayStation (08.wav) -->
+    <audio id="logo-audio" preload="auto">
+        <source src="audio/08.wav" type="audio/wav">
+    </audio>
+
+   <div class="contenedor">
+        <!-- Cabecera principal -->
+        <header>
+            <div class="ps-logo-wrapper">
+                <img id="ps-logo-btn" class="ps-logo" src="imagen/a9649a0eb0c8cce9a62c15c515f65a01.jpg" alt="PlayStation Logo" title="¡Haz clic para reproducir 08.wav!">
+            </div>
+            <h1>Bibliografía de la PlayStation 2</h1>
+            <p class="subtitulo">La arquitectura, impacto industrial, catálogo y legado técnico de la consola más vendida de la historia.</p>
+        </header>
+
+        <!-- Barra de navegación con los cuadrados de texto interactivos -->
+        <nav class="navegacion">
+            <ul>
+                <li><a href="#resumen" class="menu-cuadrado">Resumen</a></li>
+                <li><a href="#historia" class="menu-cuadrado">Historia & Desarrollo</a></li>
+                <li><a href="#lanzamientos" class="menu-cuadrado">Lanzamientos Regionales</a></li>
+                <li><a href="#psx-japon" class="menu-cuadrado">Sony PSX</a></li>
+                <li><a href="#hardware-tecnico" class="menu-cuadrado">Hardware & Arquitectura</a></li>
+                <li><a href="#modelos" class="menu-cuadrado">Revisiones & Modelos</a></li>
+                <li><a href="#red-homebrew" class="menu-cuadrado">Red & Homebrew</a></li>
+                <li><a href="#perifericos" class="menu-cuadrado">Periféricos</a></li>
+                <li><a href="#juegos" class="menu-cuadrado">Catálogo & Legado</a></li>
+                <li><a href="#videos-interes" class="menu-cuadrado">Videos de Interés</a></li>
+            </ul>
+        </nav>
+
+        <!-- Contenido principal -->
+        <main class="contenido-principal">
+            
+            <article class="articulo-principal">
+                
+                <section id="resumen" class="seccion">
+                    <h2>Resumen General e Impacto Industrial</h2>
+                    <p>La <strong>PlayStation 2 (PS2)</strong> es una videoconsola doméstica de sexta generación desarrollada y comercializada por Sony Computer Entertainment. Perteneciente a la era de los 128 bits, fue lanzada por primera vez en Japón el 4 de marzo de 2000, desembarcando posteriormente en Norteamérica el 26 de octubre, en Europa el 24 de noviembre y en Australia el 30 de noviembre del mismo año. Es la sucesora directa de la PlayStation original y compitió comercialmente contra la Dreamcast de Sega, la GameCube de Nintendo y la Xbox de Microsoft.</p>
+                    <p>Con un registro histórico que supera los <strong>160 millones de unidades vendidas</strong> en todo el mundo y una cifra acumulada superior a los 1.540 millones de juegos vendidos a través de un catálogo de más de <strong>4.000 títulos oficiales</strong>, la PS2 se consolida como la plataforma de sobremesa más exitosa y vendida en la historia de los videojuegos. Su ciclo de vida en el mercado abarcó casi 13 años continuos, produciéndose de forma ininterrumpida hasta el 4 de enero de 2013, cuando Sony anunció el cese definitivo de su fabricación global.</p>
+                    <p>El éxito arrollador de la PlayStation 2 radica en una combinación estratégica de factores: la inclusión de un reproductor de DVD comercial de bajo coste en una época donde dichos reproductores independientes superaban el precio de la propia consola, la retrocompatibilidad completa con el catálogo y accesorios de la PlayStation original, y un respaldo masivo por parte de estudios de desarrolladores de terceros a nivel internacional.</p>
+                </section>
+
+                <section id="historia" class="seccion">
+                    <h2>Historia, Diseño Secreto y Desarrollo</h2>
+                    <p>Tras el impacto de la primera PlayStation lanzada a finales de 1994, el equipo de ingeniería liderado por Ken Kutaragi ("el Padre de la PlayStation") comenzó la planificación conceptual de su sucesora bajo estricto secreto operativo en 1995. En 1997, los primeros rumores en la prensa técnica apuntaban a que Sony estaba colaborando con fabricantes de semiconductores para diseñar un chip revolucionario centrado en el cálculo vectorial y el renderizado 3D de geometría compleja.</p>
+                    <p>El anuncio oficial tuvo lugar el 2 de marzo de 1999 en una conferencia de prensa especial celebrada en Tokio. Sony sorprendió a la industria al revelar la arquitectura técnica del procesador central, bautizado como <strong>Emotion Engine</strong>, desarrollado en conjunto con Toshiba en una planta de fabricación construida específicamente en la prefectura de Nagasaki con una inversión de cientos de millones de dólares. El objetivo planteado por Kutaragi no era solo generar gráficos tridimensionales realistas, sino simular físicas avanzadas, inteligencia artificial y comportamientos emocionales en tiempo real dentro de los entornos virtuales.</p>
+                    <p>La decisión de integrar una unidad de lectura para discos ópticos de formato DVD-ROM de doble capa (con capacidad de hasta 8,5 GB) fue determinante. En el año 2000, los reproductores de DVD domésticos independientes tenían un coste significativamente elevado; la adquisición de la PS2 ofrecía a las familias un centro de entretenimiento multimedia apto para películas de cine en alta definición junto con una videoconsola de última generación.</p>
+
+                    <div class="imagen-container">
+                        <img src="imagen/WhatsApp Image 2026-10-26 at 14.48.00.jpeg" alt="Ilustración y diseño del concepto de PlayStation 2">
+                    </div>
+                </section>
+
+                <section id="lanzamientos" class="seccion">
+                    <h2>Lanzamientos Regionales y Dinámica de Mercado</h2>
+                    <p>El despliegue comercial global de la consola enfrentó retos logísticos masivos, alzas en la demanda y picos de entusiasmo popular sin precedentes:</p>
+                    <ul>
+                        <li><strong>Japón (4 de marzo de 2000):</strong> Con un precio de lanzamiento de ¥39.800, la consola vendió casi 1 millón de unidades en sus primeras 24 a 48 horas, agotando las reservas acumuladas. Debido a un catálogo inicial ajustado en cantidad de software, la película en DVD <em>The Matrix</em> se convirtió sorpresivamente en uno de los productos más vendidos junto a la consola para probar sus capacidades multimedia.</li>
+                        <li><strong>Norteamérica (26 de octubre de 2000):</strong> Salió a la venta a un precio de $299 USD. La desmedida demanda provocó retrasos en los envíos marítimos y escasez de componentes del chip Graphics Synthesizer, causando largas filas de consumidores en tiendas. A pesar de la falta de stock en ciertas regiones, generó más de 250 millones de dólares de ingresos en su primer día en el mercado.</li>
+                        <li><strong>Europa y Oceanía (noviembre de 2000):</strong> Llegó a las tiendas británicas por £299 y al resto de Europa con precios equivalentes. El lanzamiento europeo estuvo marcado por la rápida adopción de títulos deportivos e hipercomerciales, asegurando cuotas de mercado abrumadoras frente a la competencia europea.</li>
+                        <li><strong>Consolidación y Dominio:</strong> El éxito temprano de la PS2 aceleró la caída de la Sega Dreamcast, que cesó su producción en marzo de 2001. Posterior a ello, aunque la Microsoft Xbox y la Nintendo GameCube contaban en ciertos apartados con arquitecturas de GPU más modernas, el arraigo de exclusividades temporales y permanentes en la PS2 (como <em>Grand Theft Auto III</em>, <em>Final Fantasy X</em> y <em>Metal Gear Solid 2: Sons of Liberty</em>) aseguró el liderazgo indiscutible de Sony durante toda la década.</li>
+                    </ul>
+                </section>
+
+                <!-- Sección Sony PSX (Exclusiva de Japón) -->
+                <section id="psx-japon" class="seccion">
+                    <h2>Sony PSX (Exclusiva de Japón)</h2>
+                    <p>Lanzada exclusivamente en el mercado japonés a finales de 2003 (series DESR), la <strong>PSX</strong> fue un centro multimedia de alta gama que integraba por completo el hardware de una PlayStation 2 con un grabador de vídeo digital (DVR), sintonizador de televisión y disco duro interno de gran capacidad.</p>
+                    <p>A pesar de sus avanzadas prestaciones técnicas, el dispositivo nunca salió al mercado internacional (occidental) debido a sus elevados costes de producción y las diferencias críticas en los sistemas de televisión.</p>
+                    <p>Fue el primer dispositivo comercial de Sony en incorporar la célebre interfaz gráfica <strong>XrossMediaBar (XMB)</strong>, la cual se popularizó posteriormente en la consola portátil PSP y en la PlayStation 3.</p>
+
+                    <div class="imagen-container">
+                        <img src="imagen/Gemini_Generated_Image_m9b4ojm9b4ojm9b4.jfif" alt="Sony PSX DVR PlayStation 2 Japón">
+                    </div>
+                </section>
+
+                <section id="hardware-tecnico" class="seccion">
+                    <h2>Hardware y Arquitectura Interna Técnica</h2>
+                    <p>La arquitectura de la PlayStation 2 se considera una de las más complejas e innovadoras de la historia de los microprocesadores para entretenimiento doméstico, requiriendo una curva de aprendizaje especializada por parte de los programadores:</p>
+                    
+                    <h3>1. Procesador Central: Emotion Engine (EE)</h3>
+                    <p>Un microprocesador personalizado RISC MIPS R5900 de 64 bits que funciona a una frecuencia de reloj de 294,912 MHz (actualizado a 299 MHz en revisiones posteriores). Incluye:</p>
+                    <ul>
+                        <li><strong>Unidades de Procesamiento Vectorial (VPU0 y VPU1):</strong> Coprocesadores matemáticos dedicados al cálculo geométrico, iluminación por vértice, transformación 3D y físicas en tiempo real. VPU1 trabajaba de forma directa alimentando al sintetizador gráfico.</li>
+                        <li><strong>Rendimiento en Flops:</strong> Capacidad teórica de cálculo en punto flotante de 6,2 GFLOPS, superior a la mayoría de ordenadores personales comerciales contemporáneos del año 2000.</li>
+                        <li><strong>Memoria Principal:</strong> 32 MB de memoria RAMBUS RDRAM (Direct RDRAM) con un bus de 16 bits funcionando a 400 MHz (efectivos 800 MHz), proporcionando un ancho de banda masivo de 3,2 GB/s.</li>
+                    </ul>
+
+                    <h3>2. Sintetizador Gráfico: Graphics Synthesizer (GS)</h3>
+                    <p>Procesador gráfico dedicado que funciona a 147,456 MHz. A diferencia de las tarjetas gráficas tradicionales de la época, basaba su rendimiento en la velocidad de renderizado bruto mediante memoria integrada ultra-rápida:</p>
+                    <ul>
+                        <li><strong>Memoria eDRAM Integrada:</strong> 4 MB de eDRAM incrustada en el propio chip con un bus interno de lectura/escritura de 2560 bits, entregando un ancho de banda histórico de 48 GB/s.</li>
+                        <li><strong>Tasa de Relleno (Fillrate):</strong> Tasa teórica de 2,4 gigapíxeles por segundo, capaz de dibujar entre 25 y 75 millones de polígonos sin texturas por segundo, y entre 5 y 20 millones de polígonos texturizados e iluminados en escenarios de juegos reales.</li>
+                        <li><strong>Soporte de Resoluciones:</strong> Salidas estándar SDTV de 240p, 480i (NTSC) y 576i (PAL). Mediante el cable de vídeo por componentes (YPbPr), ciertos títulos soportaban modos progresivos de 480p e incluso resoluciones de alta definición HD de 1080i (como <em>Gran Turismo 4</em> y <em>Tourist Trophy</em>).</li>
+                    </ul>
+
+                    <div class="imagen-container">
+                        <img src="imagen/WhatsApp Image 2026-10-26 at 15.03.51.jpeg" alt="Esquema técnico y arquitectura de hardware de PlayStation 2">
+                    </div>
+
+                    <h3>3. Sistema de Sonido e E/S (I/O)</h3>
+                    <p>Procesador de sonido <strong>SPU2</strong> con 2 MB de memoria dedicada, compatible con 48 canales de audio PCM estéreo y capacidad para decodificar señales Dolby Digital 5.1 y DTS mediante salida de audio óptico TOSLINK. Para mantener retrocompatibilidad con la PS1, integró como procesador de entrada/salida (IOP) el chip de la PlayStation original funcionando a 36,8 MHz.</p>
+                </section>
+
+                <section id="modelos" class="seccion">
+                    <h2>Revisiones de Hardware y Modelos Específicos</h2>
+                    <p>A lo largo de sus 13 años de historia comercial, la plataforma experimentó importantes rediseños estéticos y estructurales clasificables en cuatro vertientes principales:</p>
+                    <ul>
+                        <li><strong>Modelos Originales ("Fat" - Series SCPH-10000 a SCPH-50000):</strong> Chasis robusto de color negro mate diseñado para posicionarse en vertical u horizontal. Contaba con bahía de expansión interna de 3,5 pulgadas (para alojar el adaptador de red y un disco duro IDE de hasta 40 GB), dos puertos USB 1.1 e interfaz i.LINK (IEEE 1394) en sus primeras revisiones para conexión directa entre dos consolas en red local.</li>
+                        <li><strong>Línea Slimline ("Slim" - Series SCPH-70000 a SCPH-90000):</strong> Introducida a finales de 2004, redujo el volumen total del sistema en un 75% y su peso a la mitad. Incorporó de fábrica el puerto Ethernet RJ-45 para juego en línea y un lector de discos con tapa superior. Las versiones SCPH-90000 eliminaron el transformador eléctrico externo integrándolo dentro del chasis ultracompacto.</li>
+                        <li><strong>PSX (Series DESR-5000 a DESR-7700):</strong> Comercializada exclusivamente en Japón desde finales de 2003, fue un centro de entretenimiento que combinaba una PlayStation 2 con un grabador de vídeo digital (DVR) con sintonizador de TV y disco duro de hasta 250 GB. Fue el primer dispositivo en incorporar la célebre interfaz gráfica <strong>XrossMediaBar (XMB)</strong>, posteriormente utilizada en la PSP y PlayStation 3.</li>
+                        <li><strong>Televisor HDTV Sony Bravia KDL-22PX300 (2010):</strong> Un híbrido único comercializado en Europa que integraba en la base del soporte de una pantalla LCD HD de 22 pulgadas una consola PlayStation 2 completamente funcional con 4 puertos HDMI y conectividad de red.</li>
+                    </ul>
+                </section>
+
+                <section id="red-homebrew" class="seccion">
+                    <h2>Infraestructura en Línea, Modding y Escena Homebrew</h2>
+                    <p>A diferencia de su rival Microsoft con Xbox Live, Sony adoptó un modelo descentralizado de red conocido como <strong>PlayStation Network Adapter</strong>. Los propios desarrolladores (como EA Sports, Konami o Square Enix) gestionaban los servidores independientes de sus títulos sin cuota centralizada para el jugador. Títulos emblemáticos como <em>SOCOM: U.S. Navy SEALs</em>, <em>Star Wars Battlefront II</em>, <em>Call of Duty 3</em> y <em>Final Fantasy XI</em> (el cual requería la instalación obligatoria del HDD interno) pionerizaron las comunidades masivas en línea en consolas de sobremesa.</p>
+                    <p>Paralelamente, la arquitectura abierta y la vulnerabilidad de la tarjeta de memoria (a través del exploit <strong>Free MCBoot</strong>) permitieron el crecimiento de una amplia comunidad de desarrollo casero o <em>homebrew</em>. Mediante aplicaciones avanzadas como <strong>uLaunchELF</strong> y <strong>Open PS2 Loader (OPL)</strong>, los usuarios podían cargar imágenes de respaldo de sus juegos desde unidades USB, discos duros internos IDE/SATA o carpetas compartidas mediante red local (SMB). Asimismo, la propia Sony comercializó oficialmente el paquete <strong>Linux para PlayStation 2</strong>, que transformaba la consola en una estación de trabajo completa equipada con ratón, teclado USB, monitor VGA y un kernel de Linux funcional.</p>
+                </section>
+
+                <section id="perifericos" class="seccion">
+                    <h2>Mandos, Tarjetas y Periféricos Especializados</h2>
+                    <p>El ecosistema de accesorios de la PlayStation 2 expandió de manera determinante las formas de interactuar con el software interactivo:</p>
+                    <ul>
+                        <li><strong>Mando DualShock 2 (SCPH-10010):</strong> Estéticamente idéntico al DualShock original pero fabricado en acabado negro mate, incorporó botones de acción, gatillos y cruceta analógica sensibles a la presión con hasta 255 niveles de precisión táctil de profundidad.</li>
+                        <li><strong>Tarjeta de Memoria Memory Card (8 MB):</strong> Utilizaba memoria Flash NAND de alta velocidad equipada con la tecnología de encriptación y protección de derechos de autor <strong>MagicGate</strong>, indispensable para gestionar las partidas guardadas de los juegos de mayor complejidad.</li>
+                        <li><strong>Cámara EyeToy (2003):</strong> Cámara digital USB pionera en el reconocimiento visual de movimientos corporales en tiempo real sin necesidad de mandos físicos, precedente directo de los sensores de movimiento modernos.</li>
+                        <li><strong>Periféricos Temáticos y Musicales:</strong> La consola popularizó hardware dedicado como los micrófonos inalámbricos y con cable de <em>SingStar</em>, las guitarras y baterías de las franquicias <em>Guitar Hero</em> y <em>Rock Band</em>, la alfombrilla de baile para <em>Dance Dance Revolution</em>, la serie de pistolas ópticas <em>GunCon 2</em> de Namco, y volantes con retroalimentación de fuerza (Force Feedback) como el <em>Logitech Driving Force GT</em>.</li>
+                    </ul>
+                </section>
+
+                <section id="juegos" class="seccion">
+                    <h2>Biblioteca de Juegos, Franquicias y Legado Cultural</h2>
+                    <p>El verdadero pilar del éxito de la PlayStation 2 fue su insuperable biblioteca de software. El juego más vendido en la historia de la consola fue <strong>Grand Theft Auto: San Andreas (2004)</strong> de Rockstar Games, alcanzando más de 17,33 millones de unidades comercializadas solo en esta plataforma. Le siguieron superventas masivos como <em>Grand Theft Auto III</em>, <em>Grand Theft Auto: Vice City</em>, <em>Gran Turismo 3: A-Spec</em> y <em>Gran Turismo 4</em>.</p>
+                    <p>La consola sirvió de cuna para el nacimiento y la consolidación de algunas de las franquicias más aclamadas de la industria contemporánea: <em>God of War</em>, <em>Devil May Cry</em>, <em>Kingdom Hearts</em>, <em>Ratchet & Clank</em>, <em>Jak and Daxter</em>, <em>Sly Cooper</em>, <em>Monster Hunter</em>, <em>Shadow of the Colossus</em>, <em>Ico</em>, <em>Silent Hill 2</em>, <em>Okami</em>, <em>Persona 3 y 4</em>, <em>Yakuza</em>, y la transición al entorno 3D de sagas como <em>Metal Gear Solid</em>, <em>Tekken</em>, <em>Pro Evolution Soccer (PES)</em> y <em>Final Fantasy</em>.</p>
+
+                    <div class="imagen-container">
+                        <img src="imagen/WhatsApp Image 2026-10-26 at 15.57.21.jpeg" alt="Catálogo de juegos y arte conceptual de PlayStation 2">
+                    </div>
+
+                    <p>El último videojuego oficial publicado para la consola en mercados occidentales fue <em>Pro Evolution Soccer 2014</em>, lanzado comercialmente en noviembre de 2013, meses después del anuncio de la PlayStation 4. El legado de la consola continúa vigente en la actualidad a través de la emulación de alto rendimiento (mediante proyectos de código abierto como <strong>PCSX2</strong>) y la preservación digital de su catálogo histórico.</p>
+                </section>
+
+                <section id="videos-interes" class="seccion">
+                    <h2>Videos de Interés y Material Audiovisual</h2>
+                    <p>Puedes reproducir directamente los siguientes contenidos en pantalla sin salir de la página:</p>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <h3>1. PlayStation 2 Intro (Pantalla de Inicio)</h3>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/9jfxezOkEmk" title="PlayStation 2 Intro ps2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>2. PlayStation 2 Disc Read Error (Error de lectura)</h3>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/s6JhPV_O5k4" title="Playstation 2 Disc Read Error" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>3. Los 20 MEJORES JUEGOS de PS2</h3>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/-XCvh7zEVgk" title="Los 20 MEJORES JUEGOS de PS2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </section>
+
+            </article>
+
+            <!-- Aside: Ficha técnica y juegos al costado -->
+            <aside class="bloque-secundario">
+                <h3>Ficha Técnica PS2</h3>
+                <p><strong>Desarrollador:</strong> Sony Computer Entertainment</p>
+                <p><strong>Lanzamiento Inicial:</strong> 4 de marzo de 2000 (Japón)</p>
+                <p><strong>Ventas Totales:</strong> +160 millones de consolas</p>
+                <p><strong>Juegos Vendidos:</strong> +1.540 millones de copias</p>
+                <p><strong>CPU:</strong> Emotion Engine @ 294.912 MHz</p>
+                <p><strong>GPU:</strong> Graphics Synthesizer @ 147.456 MHz</p>
+                <p><strong>Memoria RAM:</strong> 32 MB Direct RDRAM</p>
+                <p><strong>VRAM Incorporada:</strong> 4 MB eDRAM (48 GB/s)</p>
+                <p><strong>Audio:</strong> SPU2 (48 canales, Dolby/DTS)</p>
+                <p><strong>Soporte Óptico:</strong> DVD-ROM 4x / CD-ROM 24x</p>
+                <p><strong>Juego #1 Vendido:</strong> GTA San Andreas (17.33M)</p>
+                <p><strong>Descontinuación:</strong> 4 de enero de 2013</p>
+
+                <!-- Portadas de los 5 juegos ubicadas al costado -->
+                <h3 style="margin-top: 1.5rem; font-size: 0.95rem;">Juegos Destacados</h3>
+                <div class="juegos-lateral-container">
+                    <img src="imagen/R.png" alt="GTA San Andreas" class="juego-miniatura" title="GTA San Andreas">
+                    <img src="imagen/74a999be5083eb263894343e5db0d89a.jpg" alt="Dragon Ball Z Budokai Tenkaichi" class="juego-miniatura" title="DBZ Budokai Tenkaichi">
+                    <img src="imagen/20e5ea819e2ad76a0e449223fa3228c3.jpg" alt="Naruto Shippuden Ultimate Ninja 5" class="juego-miniatura" title="Naruto Ultimate Ninja 5">
+                    <img src="imagen/ae350af2cd8fd870d07570baa5cb2066.jpg" alt="God of War" class="juego-miniatura" title="God of War">
+                    <img src="imagen/Fahrenheit.jpg" alt="Fahrenheit" class="juego-miniatura" title="Fahrenheit">
+                </div>
+            </aside>
+
+        </main>
+
+        <!-- Pie de página -->
+        <footer>
+            <p>&copy; 2026 - Proyecto Bibliografía PlayStation 2 | Documentación histórica basada en registros técnicos oficiales de Sony Computer Entertainment y Wikipedia</p>
+        </footer>
+   </div> 
+
+    <!-- Script de configuración de audios y animación de fondo -->
+    <script>
+        const introAudio = document.getElementById('intro-audio');
+        const menuHoverAudio = document.getElementById('menu-hover-audio');
+        const menuClickAudio = document.getElementById('menu-click-audio');
+        const logoAudio = document.getElementById('logo-audio');
+        const logoBtn = document.getElementById('ps-logo-btn');
+        const menuCuadrados = document.querySelectorAll('.menu-cuadrado');
+
+        // 1. Reproducir videoplayback.m4a al iniciar
+        window.addEventListener('DOMContentLoaded', () => {
+            if (introAudio) {
+                introAudio.volume = 0.8;
+                introAudio.play().catch(() => {
+                    const unlockAudio = () => {
+                        introAudio.play();
+                        window.removeEventListener('click', unlockAudio);
+                    };
+                    window.addEventListener('click', unlockAudio);
+                });
+            }
+        });
+
+        // 2 y 3. Sonidos 13.wav (hover) y 14.wav (click) para los botones del menú
+        menuCuadrados.forEach(cuadrado => {
+            cuadrado.addEventListener('mouseenter', () => {
+                if (menuHoverAudio) {
+                    menuHoverAudio.currentTime = 0;
+                    menuHoverAudio.play().catch(e => console.log("Hover audio bloqueado", e));
+                }
+            });
+
+            cuadrado.addEventListener('click', () => {
+                if (menuClickAudio) {
+                    menuClickAudio.currentTime = 0;
+                    menuClickAudio.play().catch(e => console.log("Click audio bloqueado", e));
+                }
+            });
+        });
+
+        // 4. Sonido 08.wav al hacer clic en el logo de PlayStation
+        if (logoBtn && logoAudio) {
+            logoAudio.volume = 0.8;
+            logoBtn.addEventListener('click', () => {
+                logoAudio.currentTime = 0;
+                logoAudio.play().catch(e => console.log("Error al reproducir 08.wav:", e));
+            });
+        }
+
+        // Configuración de la animación 3D de fondo negro con símbolos flotantes
+        const canvas = document.getElementById('ps2-bg');
+        const ctx = canvas.getContext('2d');
+
+        function resize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resize);
+        resize();
+
+        const symbols = ['triangle', 'circle', 'cross', 'square', 'cube'];
+        const colors = {
+            triangle: '#10b981',
+            square: '#f43f5e',
+            circle: '#ef4444',
+            cross: '#38bdf8',
+            cube: '#93c5fd'
+        };
+
+        const floatingObjects = [];
+        const totalObjects = 42;
+
+        for (let i = 0; i < totalObjects; i++) {
+            const type = symbols[Math.floor(Math.random() * symbols.length)];
+            floatingObjects.push({
+                type: type,
+                x: Math.random() * window.innerWidth,
+                y: Math.random() * window.innerHeight,
+                size: Math.random() * 24 + 16,
+                speedY: -(Math.random() * 0.4 + 0.15),
+                rot: Math.random() * Math.PI * 2,
+                rotSpeed: (Math.random() - 0.5) * 0.015,
+                opacity: Math.random() * 0.45 + 0.15,
+                color: colors[type]
+            });
+        }
+
+        function animate() {
+            ctx.fillStyle = '#000000';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            floatingObjects.forEach(obj => {
+                obj.y += obj.speedY;
+                obj.rot += obj.rotSpeed;
+
+                if (obj.y < -60) {
+                    obj.y = canvas.height + 60;
+                    obj.x = Math.random() * canvas.width;
+                }
+
+                ctx.save();
+                ctx.translate(obj.x, obj.y);
+                ctx.rotate(obj.rot);
+                ctx.strokeStyle = obj.color;
+                ctx.fillStyle = obj.color;
+                ctx.globalAlpha = obj.opacity;
+                ctx.lineWidth = 2.5;
+                ctx.shadowColor = obj.color;
+                ctx.shadowBlur = 10;
+
+                const s = obj.size;
+
+                if (obj.type === 'cube') {
+                    ctx.strokeRect(-s/2, -s/2, s, s);
+                } else if (obj.type === 'triangle') {
+                    ctx.beginPath();
+                    ctx.moveTo(0, -s/1.1);
+                    ctx.lineTo(s/1.1, s/1.3);
+                    ctx.lineTo(-s/1.1, s/1.3);
+                    ctx.closePath();
+                    ctx.stroke();
+                } else if (obj.type === 'circle') {
+                    ctx.beginPath();
+                    ctx.arc(0, 0, s/1.2, 0, Math.PI * 2);
+                    ctx.stroke();
+                } else if (obj.type === 'cross') {
+                    ctx.beginPath();
+                    ctx.moveTo(-s/1.2, -s/1.2); ctx.lineTo(s/1.2, s/1.2);
+                    ctx.moveTo(s/1.2, -s/1.2); ctx.lineTo(-s/1.2, s/1.2);
+                    ctx.stroke();
+                } else if (obj.type === 'square') {
+                    ctx.strokeRect(-s/1.2, -s/1.2, s*1.4, s*1.4);
+                }
+
+                ctx.restore();
+            });
+
+            requestAnimationFrame(animate);
+        }
+        animate();
+    </script>
+</body>
+</html>
